@@ -1,0 +1,54 @@
+div .selection  {
+    padding: 150px 0 0 45%;
+}
+div .content_wrapper {
+    padding: 0 0 0 10px;
+}
+
+button #enter_match_id {
+    margin-top: 10px;
+}
+
+h2.subheading {
+    text-align: center;
+}
+
+div .player {
+    margin: 0 0 10px 0;
+}
+
+div .row {
+    margin: -10px 0 -10px 0;
+}
+
+div .team {
+    padding-right: -10px;
+}
+
+div .map_canvas {
+    height: 512px;
+    width: 512px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+div .active1 {
+    background: #A9E691;
+}
+
+div .active2 {
+    background: #FF9191;
+}
+
+div .crop {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+div .map {
+    padding-left: 3%;
+}

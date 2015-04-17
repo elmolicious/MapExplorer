@@ -1,0 +1,34 @@
+<div>
+    <div class="container-fluid content_wrapper">
+        <div class="row" ng-show="initialized">
+
+            <div class="col-md-4 team">
+                <team teamdata="match_data.teams[0]" focusplayer="focus_player" participants="match_data.participants"
+                      playercontroller="player_controller"></team>
+            </div>
+
+            <div class="col-md-4 map">
+                <h1>{{get_map_name(match_data.mapId)}}</h1>
+
+                <div id="map" class="map_canvas" style="background-image: url({{get_map_img(match_data.mapId)}})"></div>
+                <div container-fluid>
+
+                    <button style="width : 35%" class="btn" ng-click="backturn()">-1 min</button>
+
+
+                    <input style="width : 20%" ng-model="turn">
+
+                    <button style="width : 35%" class="btn" ng-click="advanceturn()"> +1 min</button>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-4 team">
+                <team teamdata="match_data.teams[1]" focusplayer="focus_player" participants="match_data.participants"
+                      playercontroller="player_controller"></team>
+            </div>
+
+        </div>
+    </div>
+</div>

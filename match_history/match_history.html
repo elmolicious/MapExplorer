@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Summoner Name</span>
+        <input type="text" class="form-control" ng-model="summoner_name" aria-describedby="basic-addon1">
+    </div>
+
+    <button ng-show="!match_history" class="btn btn-block btn-warning" ng-click="get_match_history()"> Match History
+    </button>
+    <br>
+
+    <div ng-show="match_history">
+        <div class="container-fluid">
+            <div ng-repeat="match in match_history">
+                <button class="btn btn-block btn-warning" ng-click="enter_match_id(match)">
+                    {{match.gameId}}
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

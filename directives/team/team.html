@@ -1,0 +1,23 @@
+<div>
+    <h1>Team {{team_id / 100}}</h1>
+
+    <div ng-if="team.bans && team.bans.length > 0">
+        <h2>Bans</h2>
+        <div class="row content">
+            <div class="col-md-4" ng-repeat="ban in team.bans">
+                <img class="img-circle" style="height: 64px; width : 64px" src="{{get_champion_img(ban.championId)}}">
+                {{get_champion_name(ban.championId)}}
+            </div>
+        </div>
+    </div>
+
+    <h2>Players</h2>
+    <hr>
+    <div ng-repeat="player in participants">
+        <div ng-if="player.teamId === team_id">
+            <player playerdata="player" focusplayer="focusplayer" playercontroller="playercontroller"></player>
+            <hr>
+        </div>
+    </div>
+
+</div>
