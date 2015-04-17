@@ -25,6 +25,9 @@ Also the backend has to be running (see the Readme of the backend repository)
 
 ## Features ##
 
+It works only for EUW games at the moment ... well this is rather an missing feature than a feature ... sorry,
+I may fix that if I am home early enough
+
 Game Selection :
 * Random Urf Game (due to time issues just a random game out of 1 bucket (see backend))
 * From a players match history
@@ -35,6 +38,12 @@ Replay:
 * Click a player champion image to focus the champion on the side and on the map
 * Controlls to change the Intervall (in Minutes(due to the interval length returned from the api)
 * Animated Movement of the Champions
+
+Caching:
+
+* I use the html5 local storage feature to cache all the static data client side
+* Also the match data with the id as the key
+* Currently there is no Expiration for the static data
 
 All other features should be self-explanatory
 
@@ -49,6 +58,8 @@ I couldnt finish or start a lot of features i wanted to implement, here is a lis
 * Implemenet an error handling with a good description about it
 * Move some code to the server which doesnt have to be client handled
 * Apply more correct angular to this app
+* Serverside caching
+* At some points I did use data dragon urls directly because I had not enough time left to go via the static data api
 * ...
 
 ## About me ##
