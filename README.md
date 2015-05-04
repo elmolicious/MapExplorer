@@ -61,13 +61,3 @@ I couldnt finish or start a lot of features i wanted to implement, here is a lis
 * Serverside caching
 * At some points I did use data dragon urls directly because I had not enough time left to go via the static data api
 * ...
-
-## About me ##
-
-Hi my name is Robin (20), im currently doing a Bachelor in Computer Science mixed with Mathematics, I worked alone on the app
-and it was by far the biggest project I ever did by myself. Additionaly to the Bachelor i work as an Software Developer/System Engineer at an E-Commerce Provider in Cologne, working on a nodejs api (No FrontEnd).
-Im from Cologne (NRW) Germany (EUW) and my summonername is 'Hi Elmo'.
-
-I hope there is nothing missing if so you may send me an email connected to my League of Legends Account or send it via Github
-
-Cheers
